@@ -1,12 +1,12 @@
-import React from "react";
-import { Home } from "./pages/home/Home";
-import { Media } from "./pages/media/Media";
-import { OurStory } from "./pages/our-story/OurStory";
-import { Robotics } from "./pages/robotics/Robotics";
-import { Conference } from "./pages/conference/Conference";
-import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
-import { Header } from "./Header";
-import { Footer } from "./Footer";
+import React from "react"
+import { Home } from "./pages/home/Home"
+import { Media } from "./pages/media/Media"
+import { OurStory } from "./pages/our-story/OurStory"
+import { Robotics } from "./pages/robotics/Robotics"
+import { Conference } from "./pages/conference/Conference"
+import { Switch, Route, BrowserRouter as Router } from "react-router-dom"
+import { Header } from "./Header"
+import { Footer } from "./Footer"
 import { ApolloClient, ApolloProvider, HttpLink, InMemoryCache } from "@apollo/client"
 
 // Initialize Apollo Client
@@ -41,11 +41,10 @@ function AppRouter() {
               <Home />
             </Route>
           </Switch>
-        }
         <Footer />
       </Router>
     </div>
-  );
+  )
 }
 
 function App() {
@@ -53,7 +52,7 @@ function App() {
     <ApolloProvider client = {client}>
       <AppRouter />
     </ApolloProvider>
-  );
+  )
 }
 
-export default App;
+export default App
